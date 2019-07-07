@@ -1,0 +1,23 @@
+#pragma once
+
+enum MY_MESSAGES
+{
+	MY_MESS_MEM_ALOC_ERROR,
+	MY_MESS_WRONG_INPUT_DATA,
+	MY_MESS_PUSH,
+	MY_MESS_FILE_NOT_OPENED_WARN,
+	MY_MESS_FILE_NOT_CREATED_ERROR,
+	MY_MESS_WRITE_TO_FILE,
+	MY_MESS_READ_FROM_FILE,
+	MY_MESS_TOTAL
+
+};
+
+enum MY_DECISION
+{
+	MY_DECISION_BREAK,
+	MY_DECISION_CONTINUE
+};
+
+enum MY_DECISION my_mess_fun(enum MY_MESSAGES mess);
+void my_mess_error(struct MY_STUDENT *student, char *tab, __int64 *t, FILE *pf);
